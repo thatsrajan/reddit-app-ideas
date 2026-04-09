@@ -1,16 +1,18 @@
-Status: completed
-Built: browser-based transcript-to-action-items extractor
-Run: python3 -m http.server 8000
-Known gaps:
-- Heuristic extraction only
-- No direct Notion/Linear integration
-- No audio transcription path yet
-
-Git status:
-- commit: 17607e6
-- remote: https://github.com/rajanrengasamy/5-app-ideas-pulled-from-real-reddit-complaints-structured-action.git
-- git init: Initialized empty Git repository in /Users/rajan/Library/CloudStorage/Dropbox/Projects/moltbot/labs/overnight-pipeline/runs/20260407T040652/projects/5-app-ideas-pulled-from-real-reddit-complaints-structured-action/.git/
-- origin added: https://github.com/rajanrengasamy/5-app-ideas-pulled-from-real-reddit-complaints-structured-action.git
--  create mode 100644 styles.css
-- push result: remote: Repository not found.
-fatal: repository 'https://github.com/rajanrengasamy/5-app-ideas-pulled-from-real-reddit-complaints-structured-action.git/' not found
+Build Log: 5-app-ideas-pulled-from-real-reddit-complaints-structured-action
+Started: 2026-04-09T15:00:50.807709+00:00
+Ended: 2026-04-09T15:00:52.911020+00:00
+Builder mode: inline_fallback (GLM: stub_fallback)
+Implemented:
+- /Users/rajan/Library/CloudStorage/Dropbox/Projects/moltbot/labs/overnight-pipeline/runs/20260410T010033/projects/5-app-ideas-pulled-from-real-reddit-complaints-structured-action/README.md
+- /Users/rajan/Library/CloudStorage/Dropbox/Projects/moltbot/labs/overnight-pipeline/runs/20260410T010033/projects/5-app-ideas-pulled-from-real-reddit-complaints-structured-action/main.py
+How to run:
+- cd /Users/rajan/Library/CloudStorage/Dropbox/Projects/moltbot/labs/overnight-pipeline/runs/20260410T010033/projects/5-app-ideas-pulled-from-real-reddit-complaints-structured-action
+- python3 main.py
+Checks:
+- GLM generation: stub_fallback | GLM call failed: rc=1, stderr=[plugins] memory-lancedb: plugin registered (db: /Users/rajan/.openclaw/memory/lancedb, lazy init)
+Gateway agent failed; falling back to embedded: Error: Unknown agent id
+- python3 -m py_compile main.py => rc=0
+Notes:
+- GLM-5-Turbo attempts to generate working code from PRD
+- Falls back to stub if GLM fails or times out
+Final status: SUCCESS
